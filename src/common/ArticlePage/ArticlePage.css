@@ -1,0 +1,69 @@
+.articlePage {
+    margin: 70px 20px;
+}
+
+.articlePage > h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.articlePage-about {
+    width: 100%;
+    position: relative;
+}
+
+.articlePage-about > p {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin: 10px 0px;
+}
+
+.articlePage-about > img {
+    width: 90%;
+    margin: 20px 0px;
+}
+
+.articlePage-equipment {
+    margin: 20px 0px;
+    width: 100%;
+    position: relative;
+}
+.articlePage-equipment > h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: left;
+}
+
+.articlePage-equipment > p {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin: 10px 0px;
+}
+
+.articlePage-equipment > img {
+    width: 90%;
+    margin: 20px 0px;
+}
+
+
+

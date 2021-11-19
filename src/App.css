@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif; */
+
+.App {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1400px;
+}
+
+@media(max-width: 1800px) {
+  .App {
+    max-width: 1200px;
+  }
+}
