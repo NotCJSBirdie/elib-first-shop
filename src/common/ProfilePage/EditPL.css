@@ -1,0 +1,87 @@
+.EditPL {
+    margin: 70px auto;
+    text-align: center;
+    width: 500px;
+    height: 520px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.EditPL > h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+    padding-top: 60px;
+}
+
+.EditPL-inputs {
+    margin: 100px auto 0px auto;
+    width: 400px;
+}
+
+.EditPL-inputs > div {
+    display: flex;
+    align-items: center;
+    margin: 40px 10px 10px 10px;
+    background: #F9F9F9;
+    padding: 15px 10px;
+    border-radius: 2px;
+}
+
+
+.EditPL-inputs > div > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.EditPL-inputs > div > img {
+    cursor: pointer;
+}
+
+.EditPL-inputs > span {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 12px;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgba(4, 24, 56, 0.4);
+    cursor: pointer;
+}
+
+.EditPL > button {
+    background: #004194;
+    border-radius: 4px;
+    
+    padding: 10px 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #F6F6FC;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+.EditPL > img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+}

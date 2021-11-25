@@ -1,0 +1,111 @@
+.basket {
+   max-width: 1200px;
+   max-height: 750px;
+   margin: 0 auto;
+   background-color: #ffffff;
+}
+
+.basket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.basket-header > h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 38px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.basket-header > img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.basket-items {
+    max-height: 550px;
+    overflow-y: scroll;
+}
+
+.basketItem {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+    background-color: #F9F9F9;
+    border-radius: 2px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.basketItem > .img-title {
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+}
+
+.basketItem > div > h4 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.button-numb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.button-numb > button {
+    background: none;
+    border: none;
+    padding: 0px 8px;
+    cursor: pointer;
+
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #004194;
+}
+
+.button-numb > span {
+    background-color: #ffffff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.basket-footer {
+    margin: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.basket-footer > button {
+    background: #004194;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #F6F6FC;
+    cursor: pointer;
+    margin: 0px 20px;
+    white-space: nowrap;
+}

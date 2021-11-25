@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   transition: .5s ease-in;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
 body {

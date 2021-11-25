@@ -1,0 +1,129 @@
+.profilePage {
+    margin: 70px 15px;
+}
+
+.profilePage > h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.profilePage-subTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.profilePage-subTitle > h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.profilePage-subTitle > span {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgba(1, 28, 49, 0.8);
+    cursor: pointer;
+}
+
+.personalInfo-info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    position: relative;
+}
+
+.personalInfo-con {
+    width: 1100px;
+    position: relative;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.personalInfo-con > div {
+    display: flex;
+}
+
+.personalInfo-con > div > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    margin-right: 10px;
+    background: #EEEEEE;
+    border-radius: 2px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.personalInfo-con > div > input:last-child {
+    margin-right: 0px;
+}
+
+.personalInfo-con > input {
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    background: #EEEEEE;
+    border-radius: 2px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 15px;
+}
+
+.profilePage-order {
+    text-align: left;
+    margin: 40px 0px;
+}
+
+.profilePage-order > h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.order-buttons {
+    margin: 30px 0px;
+}
+
+.order-buttons > button {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    margin-right: 15px;
+    background: #EEEEEE;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.order-buttons > button.active {
+    border: 1px solid rgba(4, 24, 56, 0.8);
+}

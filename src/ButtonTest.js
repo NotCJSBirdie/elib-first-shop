@@ -15,6 +15,7 @@ const ButtonTest = () => {
             <Link style={styled.link} to="/genre">genre</Link>
             <Link style={styled.link} to="/article">article</Link>
             <Link style={styled.link} to="/articleMenu">articleMenu</Link>
+            <Link style={styled.link} to="/liked">Liked</Link>
         </div>
     )
 }

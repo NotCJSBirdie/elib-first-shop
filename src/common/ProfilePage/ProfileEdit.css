@@ -1,0 +1,322 @@
+.profileEditPage {
+    margin: 70px 15px;
+}
+
+.profileEditPage > h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.personalInfo {
+    margin-top: 50px;
+}
+
+.personalInfo > h2 {
+    text-align: left;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.personalInfo-info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    position: relative;
+}
+
+.personalInfo-con {
+    width: 1000px;
+    position: relative;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.personalInfo-con > div {
+    display: flex;
+}
+
+.personalInfo-con > div > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    margin-right: 10px;
+    background: #EEEEEE;
+    border-radius: 2px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.personalInfo-con > div > input:last-child {
+    margin-right: 0px;
+}
+
+.personalInfo-con > input {
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    background: #EEEEEE;
+    border-radius: 2px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 15px;
+}
+
+.deliverInfo {
+    margin-top: 20px;
+    margin-left: 280px;
+    max-width: 1000px;
+}
+
+.deliverInfo > h2 {
+    text-align: left;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.06em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.deliverInfo-info {
+    max-width: 1000px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.deliverInfo-info > div {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.deliverInfo-info > div > .deliverInfo-region {
+    width: 50%;
+    background-color: #EEEEEE;
+    border-radius: 2px;
+    margin-right: 20px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: column;
+    position: relative;
+}
+.deliverInfo-info > div > .deliverInfo-region > div > img {
+    margin-top: 5px;
+   
+}
+
+.deliverInfo-info > div > .deliverInfo-city {
+    width: 50%;
+    background-color: #EEEEEE;
+    border-radius: 2px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+.deliverInfo-info > div > .deliverInfo-city > div,
+.deliverInfo-info > div > .deliverInfo-region > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.deliverInfo-info > div > .deliverInfo-city > div > img {
+    margin-top: 5px;
+}
+
+.deliverInfo-info > div > .deliverInfo-region > div > span,
+.deliverInfo-info > div > .deliverInfo-city > div > span {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.deliverInfo-info > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    background: #EEEEEE;
+    border-radius: 2px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 15px;
+}
+
+.chooseCity {
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    background-color: #EEEEEE;
+    border-radius: 2px;
+    padding: 20px 0px;
+}
+
+.chooseCity > ul {
+    list-style: none;
+    width: 100%;
+    text-align: left;
+}
+
+.chooseCity > ul > li {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 10px 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: .2s;
+}
+
+.chooseCity > ul > li:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+
+.chooseRegion {
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    background-color: #EEEEEE;
+    border-radius: 2px;
+    padding: 20px 0px;
+}
+
+.chooseRegion > ul {
+    list-style: none;
+    width: 100%;
+    text-align: left;
+}
+
+.chooseRegion > ul > li {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 10px 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: .2s;
+}
+
+.chooseRegion > ul > li:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.profileLogin {
+    text-align: left;
+    margin: 50px 0px;
+}
+
+.profileLogin > h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.profileLogin-login-password {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileLogin-in {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+}
+
+.profileLogin-in:last-child {
+    margin-top: 10px;
+}
+.profileLogin-in > div {
+    width: 600px;
+    position: relative;
+}
+
+.profileLogin-in > div > input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 15px;
+    background: #EEEEEE;
+    border-radius: 2px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.profileLogin-in > span {
+    white-space: nowrap;
+    margin: 0px 10px;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgba(4, 24, 56, 0.8);
+    cursor: pointer;
+}
+
+.delete-acc {
+    text-align: right;
+}
+
+.profileEditPage > div > button {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    color: rgba(0, 0, 0, 0.6);
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.profileEditPage > div > button:hover {
+    background-color: #c4302b;
+    color: #fff;
+}
