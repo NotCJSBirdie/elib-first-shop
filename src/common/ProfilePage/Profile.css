@@ -46,15 +46,11 @@
 }
 
 .personalInfo-con {
-    width: 1100px;
+    max-width: 1100px;
     position: relative;
     margin: 0px 20px;
     display: flex;
     flex-direction: column;
-}
-
-.personalInfo-con > div {
-    display: flex;
 }
 
 .personalInfo-con > div > input {
@@ -126,4 +122,75 @@
 
 .order-buttons > button.active {
     border: 1px solid rgba(4, 24, 56, 0.8);
+}
+
+.personalInfo-infoPhone {
+    display: none;
+}
+
+@media (max-width: 994px) {
+
+    .profilePage {
+        margin: 30px 15px;
+    }
+    .personalInfo-infoPhone {
+        display: block;
+        margin: 20px 0px;
+    }
+    .personalInfo-info.pc {
+        display: none;
+    }
+
+    .profilePage > h2 {
+        font-size: 18px;
+    }
+
+    .profilePage-subTitle > h3 {
+        font-size: 13px;
+    }
+
+    .profilePage-subTitle > span {
+        font-size: 9px;
+    }
+
+    .personalInfo-infoPhone > img {
+        max-width: 200px;
+    }
+
+    .personalInfo-conPhone {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personalInfo-conPhone > input {
+        border: none;
+        outline: none;
+        padding: 15px 10px;
+        background: #EEEEEE;
+        border-radius: 2px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: rgba(4, 24, 56, 0.8);
+        margin-top: 10px;
+    }
+    
+    .profilePage-order > h3 {
+        font-size: 18px;
+    }
+
+    .order-buttons > button {
+        margin-top: 10px;
+
+        font-family: 'Manrope', sans-serif;
+        font-size: 8px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: rgba(4, 24, 56, 0.8);
+    }
 }

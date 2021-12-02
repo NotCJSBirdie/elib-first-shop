@@ -18,10 +18,10 @@ export const genre = [
 ]
 
 export const questions = [
-    {id:1, title: 'Как выбрать домофон?'},
-    {id:2, title: 'Как Работает домофон?'},
-    {id:3, title: 'Как долго может прослужить домофон?'},
-    {id:4, title: 'сколько стоит домофон в квартиру?'},
-    {id:5, title: 'Как Подключить домофон?'},
-    {id:6, title: 'можно ли установить домофон самостоятельно?'},
+    {id:1, title: 'Как выбрать домофон?', reply: 'lorem alsi llalalala blalalala dododoodod'},
+    {id:2, title: 'Как Работает домофон?', reply: 'lorem alsi llalalala blalalala dododoodod'},
+    {id:3, title: 'Как долго может прослужить домофон?', reply: 'lorem alsi llalalala blalalala dododoodod'},
+    {id:4, title: 'сколько стоит домофон в квартиру?', reply: 'lorem alsi llalalala blalalala dododoodod'},
+    {id:5, title: 'Как Подключить домофон?', reply: 'lorem alsi llalalala blalalala dododoodod'},
+    {id:6, title: 'можно ли установить домофон самостоятельно?', reply: 'lorem alsi llalalala blalalala dododoodod'},
 ]

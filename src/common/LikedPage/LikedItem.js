@@ -10,7 +10,21 @@ const LikedItem = ({image, title, price, done = false, btnText="Купить"}) 
             <img src={image} />
             <div className="likedPage-item-desc">
                 <h4>{title}</h4>
+                <div className="likedPage-item-rate phone">
+                {done ? <span>Выполнено</span>
+                :<div><img src={starActiveImg} />
+                <img src={starActiveImg} />
+                <img src={starActiveImg} />
+                <img src={starActiveImg} />
+                <img src={starEmptyImg} /> </div>
+                }
+            </div>
                 <span>{price}</span>
+
+                <div className="likedPage-item-buy phone">
+                <button>{btnText}</button>
+                <img src={trashImg} />
+            </div>
             </div>
             
             <div className="likedPage-item-rate">

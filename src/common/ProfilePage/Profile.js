@@ -23,16 +23,34 @@ const Profile = () => {
                 <h3>Информация о пользователе</h3>
                 <span onClick={() => setEditProfile(true)}>Изменить</span>
             </div>
-            <div className="personalInfo-info">
+            <div className="personalInfo-info pc">
           <img src={ava} />
 
-          <div className="personalInfo-con">
+          <div className="personalInfo-con pc">
+
             <div>
               <input type="text" placeholder="Имя" />
               <input type="text" placeholder="Фамилия" />
             </div>
             <input type="text" placeholder="Номер телефона" />
             <input type="text" placeholder="Email" />
+        
+          </div>
+        </div>
+
+        {/* PHONE */}
+
+        <div className="personalInfo-infoPhone">
+          <img src={ava} />
+
+          <div className="personalInfo-conPhone">
+
+            <input type="text" placeholder="Имя" />
+            <input type="text" placeholder="Фамилия" />
+           
+            <input type="text" placeholder="Номер телефона" />
+            <input type="text" placeholder="Email" />
+        
           </div>
         </div>
 

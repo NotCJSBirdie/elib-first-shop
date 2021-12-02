@@ -12,7 +12,7 @@
     background-color: #ffffff;
 }
 
-.headerTop > a > h2 {
+.headerTop-brand{
     font-family: 'Manrope', sans-serif;
     font-size: 28px;
     line-height: 38px;
@@ -186,6 +186,13 @@
     width: 20px;
 }
 
+.headerTop-menuPhone {
+    display: none;
+}
+
+.headerTop-nav {
+    display: none;
+}
 
 @media (max-width: 1020px) {
     .headerTop {
@@ -202,4 +209,68 @@
     .headerBottom-catalog-input {
         width: 70%;
     }
+}
+
+@media (max-width: 994px) {
+    .headerTop-menuPhone {
+        display: block;
+        width: 20px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+
+    .headerTop > .headerTop-leftSidePhone {
+        display: flex;
+        align-items: center;
+    }
+
+    .headerTop-contact {
+        display: none;
+    }
+
+    .headerTop-nav {
+        display: flex;
+    }
+
+    .headerTop-nav > a > img {
+        width: 20px;
+        margin: 0px 5px;
+    }
+
+    .headerBottom-catalog {
+        display: none;
+    }
+
+    .headerBottom-login {
+        display: none;
+    }
+
+    .headerBottom-catalog-input {
+        width: 100%;
+    }
+
+    .headerBottom-input {
+        width: 1000px;
+    }
+    
+}
+
+@media (max-width: 554px) {
+    .headerTop {
+        padding: 10px;
+    }
+    .headerTop-menuPhone {
+        margin-right: 10px;
+        margin-left: 0px;
+        width: 15px;
+    }
+    .headerTop-brand {
+        font-size: 14px;
+    }
+
+    .headerTop-nav > a > img {
+        width: 15px;
+    }
+
+    
 }

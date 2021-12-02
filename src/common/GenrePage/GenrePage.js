@@ -26,7 +26,7 @@ const GenrePage = () => {
             <div className="genrePage-questions-container">
 
             {questions.map(item => (
-                <GenreQuestion key={item.id} title={item.title} />
+                <GenreQuestion key={item.id} title={item.title} reply={item.reply} />
             ))}
 
         </div>

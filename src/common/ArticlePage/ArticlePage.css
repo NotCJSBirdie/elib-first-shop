@@ -65,5 +65,24 @@
     margin: 20px 0px;
 }
 
+@media (max-width: 554px) {
+    .articlePage {
+        margin: 30px 15px;
+    }
+    .articlePage > h2 {
+        font-size: 14px;
+        line-height: 18px;
+    }
 
+    .articlePage-about > p {
+        font-size: 12px;
+    }
 
+    .articlePage-equipment > h2{ 
+        font-size: 14px;
+    }
+
+    .articlePage-equipment > p {
+        font-size: 12px;
+    }
+}

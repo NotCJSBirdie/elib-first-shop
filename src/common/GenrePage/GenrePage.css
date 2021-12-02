@@ -71,25 +71,75 @@
 }
 
 .genrePage-questions-container {
-    margin: 50px 20px;
+    margin: 5a0px 20px;
 }
 
 .genrePage-question {
+    border-bottom: 1px solid rgba(1, 28, 49, 0.8);
+    line-height: 10px;
+}
+
+.genrePage-question > div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    margin-bottom: 22px;
-    border-bottom: 1px solid rgba(1, 28, 49, 0.8);
     cursor: pointer;
 }
 
-.genrePage-question > h3 {
+.genrePage-question > div > h3 {
     font-family: 'Inter', sans-serif; 
     font-size: 20px;
     line-height: 130%;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #666666;
+}
+
+.genrePage-question > p {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    text-align: left;
+    padding: 10px ;
+    letter-spacing: 0.05em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+@media(max-width: 554px) {
+
+    .genrePage {
+        margin: 30px auto;
+    }
+
+    .genrePage-genres {
+        justify-content: flex-start;
+    }
+
+    .genrePage > .title {
+        font-size: 14px;
+    }
+
+    .genrePage-genre {
+        max-width: 165px;
+    }
+    .genrePage-genre-image > img {
+        max-width: 165px;
+    }
+
+    .genrePage-genre > h4 {
+        font-size: 14px;
+    }
+
+    .genrePage-questions > h2 {
+        font-size: 14px;
+    }
+
+    .genrePage-question > div > h3 {
+        font-size: 10px;
+    }
+    .genrePage-question > div > img {
+        width: 5px;
+    }
 }

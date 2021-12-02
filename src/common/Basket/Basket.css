@@ -32,7 +32,7 @@
     overflow-y: scroll;
 }
 
-.basketItem {
+.basket-pc {
     display: flex;
     align-items: center;
     margin: 10px 20px;
@@ -42,13 +42,13 @@
     justify-content: space-between;
 }
 
-.basketItem > .img-title {
+.basket-pc > .img-title {
     display: flex;
     align-items: center;
     max-width: 70%;
 }
 
-.basketItem > div > h4 {
+.basket-pc > .img-title > h4 {
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -88,14 +88,14 @@
 }
 
 
-.basket-footer {
+.basket-footer-pc {
     margin: 40px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.basket-footer > button {
+.basket-footer-pc > button {
     background: #004194;
     border-radius: 4px;
     padding: 10px 15px;
@@ -108,4 +108,140 @@
     cursor: pointer;
     margin: 0px 20px;
     white-space: nowrap;
+}
+
+.basket-phone {
+    display: none;
+}
+
+.basket-footer-phone {
+    display: none;
+}
+
+@media(max-width: 600px) {
+
+    .basket-header {
+        border-bottom: 1px solid rgba(4, 26, 62, 0.5);
+        margin: 0px 20px;
+        padding: 10px 5px;
+    }
+    
+    .basket-header > h3 {
+        font-size: 14px;
+    }
+
+    .basket-header > img {
+        width: 18px;
+    }
+
+    .basket-pc {
+        display: none;
+    }
+
+    .img-title > img {
+        width: 70px;
+        height: 70px;
+    }
+    .basket-phone {
+        display: flex;
+        align-items: center;
+        margin: 10px 20px;
+        background-color: #F9F9F9;
+        border-radius: 2px;
+        padding: 20px;
+    }
+
+    .basketitem-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .basketitem-info > h4 {
+        width: 95%;
+        text-align: left;
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+
+    .current-price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .button-numb {
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .button-numb > button {
+        font-size: 10px;
+        padding: 0px 3px;
+    }
+
+    .current-price > span {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: #011535;
+    }
+
+    .basket-footer-pc {
+        display: none;
+    }
+
+    .basket-footer-phone {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+        border-top: 1px solid rgba(4, 26, 62, 0.5);
+    }
+    .basket-footer-phone > div {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+    }
+
+    .basket-footer-phone > div > span {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: rgba(0, 0, 0, 0.8)
+    }
+
+    .basket-footer-phone > .order {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.06em;
+        color: #FAFAFF;
+        background: #004194;
+        padding: 8px 0px;
+        border-radius: 2px;
+    }
+
+    .basket-footer-phone > .returnB {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.06em;
+        color: rgba(4, 24, 56, 0.8);
+        padding: 8px 0px;
+        margin-top: 5px;
+        background: none;
+    }
 }

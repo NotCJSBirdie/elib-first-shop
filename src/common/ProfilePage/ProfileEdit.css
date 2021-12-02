@@ -212,6 +212,7 @@
     background-color: #EEEEEE;
     border-radius: 2px;
     padding: 20px 0px;
+    z-index: 1000;
 }
 
 .chooseRegion > ul {
@@ -319,4 +320,121 @@
 .profileEditPage > div > button:hover {
     background-color: #c4302b;
     color: #fff;
+}
+
+.profileLogin-login-password.phone {
+    display: none;
+}
+
+@media(max-width: 994px) {
+
+    .personalInfo {
+        margin-top: 20px;
+    }
+
+    .profileEditPage > h2 {
+        font-size: 14px;
+    }
+
+    .personalInfo > h2 {
+        font-size: 12px;
+    }
+
+    .deliverInfo > h2 {
+        font-size: 12px;
+    }
+
+    .profileLogin > h2 {
+        font-size: 12px;
+    }
+    .deliverInfo {
+        margin: 0px;
+    }
+
+    .deliverInfo-info {
+        margin-top: 10px;
+    }
+
+    .deliverInfo-info > div {
+        flex-direction: column;
+    }
+
+    .deliverInfo-info > div > .deliverInfo-region,
+    .deliverInfo-info > div > .deliverInfo-city {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 10px 8px;
+    }
+
+    .deliverInfo-info > div > .deliverInfo-region > div > span, 
+    .deliverInfo-info > div > .deliverInfo-city > div > span {
+        font-size: 8px;
+    }
+
+    .deliverInfo-info > div > .deliverInfo-region > div > img,
+    .deliverInfo-info > div > .deliverInfo-city > div > img {
+        width: 6px;
+        height: 10px;
+    }
+
+    .deliverInfo-info > input {
+        padding: 10px 8px;
+        font-size: 8px;
+    }
+
+    .profileLogin-login-password.pc {
+        display: none;
+    }
+    .profileLogin-login-password.phone {
+        display: block;
+    }
+
+    .profileLogin {
+        margin-top: 20px;
+    }
+
+    .profileLogin-in {
+        width: 100%;
+        background: #EEEEEE;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 3px;
+        margin-top: 20px;
+    }
+
+    .profileLogin-in > span {
+        font-size: 8px;
+    }
+
+    .profileLogin-in > .log {
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: rgba(4, 24, 56, 0.8);
+    }
+
+
+    .chooseRegion, .chooseCity {
+        padding: 10px 0px;
+    }
+    
+    .chooseRegion > ul > li,
+    .chooseCity > ul > li{
+        font-size: 10px;
+        margin: 3px 0px;
+        padding: 4px 10px;
+    }
+    
+    .delete-acc {
+        text-align: center;
+    }
+
+    .profileEditPage > .delete-acc > button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
 }

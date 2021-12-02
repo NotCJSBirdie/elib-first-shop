@@ -10,6 +10,11 @@ import ArticleMenuPageSix from '../../images/articleMenuPage/articleMenuPage-6.p
 
 
 const ArticleMenuPage = () => {
+
+    function truncate(string, n) {
+        return string?.lenght > n ? string.substr(0, n - 1) + '...' : string
+    }
+
     return (
         <div className="articleMenuPage">
             <h2>Статьи</h2>
@@ -21,7 +26,7 @@ const ArticleMenuPage = () => {
                             <h3>
                             АКУМУЛЯТОРНА WI-FI КАМЕРА REOLINK ARGUS 3 
                             </h3>
-                            <p>Він охороняє весь день, ніколи не спить, ніколи не відволікається. З ним ти завжди у безпеці, все це про Reolink Argus 3. І ми розповімо про всю вижимку з характеристик та функціоналу цього монстру.</p>
+                            <p>{truncate(`Він охороняє весь день, ніколи не спить, ніколи не відволікається. З ним ти завжди у безпеці, все це про Reolink Argus 3.`, 50)}</p>
                         </div>
                     </div>
 
@@ -31,7 +36,7 @@ const ArticleMenuPage = () => {
                             <h3>
                             ОБЗОР УМНОЙ БЕСПРОВОДНОЙ ЛАМПЫ TUYA SMART 
                             </h3>
-                            <p>Умная лампа? Наш мир никогда не будет прежним! Потому, что Tuya Smart продолжает создавать умные девайсы!</p>
+                            <p>{truncate(`Умная лампа? Наш мир никогда не будет прежним! Потому, что Tuya Smart продолжает создавать умные девайсы!`, 50)}</p>
                         </div>
                     </div>
                 </div>
@@ -135,7 +140,7 @@ const ArticleMenuPage = () => {
                         </div>
                     </div>
 
-                    <div className="articleMenuPage-item">
+                    <div className="articleMenuPage-item last">
                         <img src={ArticleMenuPageTwo} alt="two"/>
                         <div>
                             <h3>

@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import "./Header.css"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import arrowDownImg from './images/arrow-down.png'
 import menuImg from './images/menu.png'
+import menuBlackImg from './images/menu-black.png'
 import searchImg from './images/search.png'
 import likeImg from './images/favorite.png'
 import userImg from './images/user.png'
 import basketImg from './images/basket.png'
+
+import likePhoneImg from './images/like-phone.png'
+import userPhoneImg from './images/user-phone.png'
+import basketPhoneImg from './images/basket-phone.png'
 
 import facebookImg from './images/soc/facebook.png'
 import instagramImg from './images/soc/instagram.png'
@@ -18,11 +23,16 @@ import twitterImg from './images/soc/twitter.png'
 const Header = ({openBusket}) => {
   const [contacts, setContacts] = useState(false)
 
+
   return (
     <header className="header">
       <div className="headerTop">
 
-        <Link to="/"><h2>COMPANY NAME</h2> </Link>
+     <div className="headerTop-leftSidePhone">
+        <img className="headerTop-menuPhone" src={menuBlackImg} />
+
+        <h2 className="headerTop-brand">COMPANY NAME</h2>
+        </div>
 
         <div>
           <ul>
@@ -56,6 +66,14 @@ const Header = ({openBusket}) => {
             : null}
         </div>
 
+        {/* Phone */}
+
+        <div className="headerTop-nav">
+            <Link to="/profile"><img className="headerBottom-login-profile" src={userPhoneImg} /></Link>
+            <Link to="/liked"><img src={likePhoneImg} /></Link>
+            <Link to="/basket"><img src={basketPhoneImg} /></Link>
+        </div>
+
       </div>
 
       <div className="headerBottom">
@@ -77,7 +95,7 @@ const Header = ({openBusket}) => {
             <span>Вход</span>
             <Link to="/liked"><img src={likeImg} /></Link>
             <Link to="/profile"><img className="headerBottom-login-profile" src={userImg} /></Link>
-            <Link to="#" onClick={() => openBusket()}><img src={basketImg} /></Link>
+            <Link to="/basket"><img src={basketImg} /></Link>
         </div>
       </div>
     </header>

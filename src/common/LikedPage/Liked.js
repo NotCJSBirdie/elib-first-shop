@@ -11,7 +11,7 @@ const Liked = () => {
     <div className="likedPage">
       <h2>Избранное</h2>
 
-      <div className="likedPage-category-search">
+      <div className="likedPage-category-search phone">
         <div className="likedPage-category">
           <div>
             <span>Категория товара</span>

@@ -17,6 +17,8 @@ import heart from "../../images/heart.png";
 import newPoshta from "../../images/newPoshta.png";
 import meets from "../../images/meets.png";
 
+import Slider from '../../component/Slider/Slider'
+
 const Selectedsub = ({executeScroll, descriptionRef, charasteristicRef}) => {
   const [item, setItem] = useState(selectedItemOne);
 
@@ -37,7 +39,11 @@ const Selectedsub = ({executeScroll, descriptionRef, charasteristicRef}) => {
         </ul>
       </div>
 
-      <div className="SelectedItem-preview">
+
+      <div className="SelectedItem-preview phone">
+        <div className="SelectedItem-slider">
+      <Slider />
+      </div>
         <div className="SelectedItem-images">
           <div className="choose-image">
             <img
@@ -60,6 +66,9 @@ const Selectedsub = ({executeScroll, descriptionRef, charasteristicRef}) => {
             <img src={item} alt="two" />
           </div>
         </div>
+
+        
+       
 
         <div className="SelectedItem-buyInfo">
           <div className="SelectedItem-rate-smallInfo">
@@ -87,53 +96,72 @@ const Selectedsub = ({executeScroll, descriptionRef, charasteristicRef}) => {
                 <small>₴</small>
               </div>
 
-              <button>Купить</button>
+              <div>
+
+              <button className="btn-phone">Купить</button>
               <button>В один клик</button>
 
               <img src={heart} alt="Like" />
+
+              </div>
             </div>
           </div>
 
           <div className="SelectedItem-deliver">
             <h2>Доставка:</h2>
             <div className="deliver-info">
-              <div>
+              <div className="deliver-info-logo">
                 <img src={newPoshta} alt="НОВА ПОШТА" />
-                <span>Доставка “Нова пошта”</span>
+                <span className="deliver-info-pc">Доставка “Нова пошта”</span>
               </div>
+              <div className="deliver-info-del">
+              <span className="deliver-info-phone">Доставка “Нова пошта”</span>
               <span>безкоштовно</span>
+              </div>
             </div>
 
             <div className="deliver-info">
-              <div>
+              <div className="deliver-info-logo">
                 <img src={meets} alt="meets" />
-                <span>Самовывоз з Meets</span>
+                <span className="deliver-info-pc">Самовывоз з Meets</span>
               </div>
+              <div className="deliver-info-del">
+              <span className="deliver-info-phone">Доставка “Нова пошта”</span>
               <span>безкоштовно</span>
+              </div>
             </div>
 
             <div className="deliver-info">
-              <div>
+              <div className="deliver-info-logo">
                 <img src={newPoshta} alt="НОВА ПОШТА" />
-                <span>Доставка курьером “Нова пошта”</span>
+                <span className="deliver-info-pc">Доставка курьером “Нова пошта”</span>
               </div>
+              <div className="deliver-info-del">
+              <span className="deliver-info-phone">Доставка “Нова пошта”</span>
               <span>49₴</span>
+              </div>
             </div>
 
             <div className="deliver-info">
-              <div>
+              <div className="deliver-info-logo">
                 <img src={meets} alt="meets" />
-                <span>Самовывоз з “Укрпошта”</span>
+                <span className="deliver-info-pc">Самовывоз з “Укрпошта”</span>
               </div>
+              <div className="deliver-info-del">
+              <span className="deliver-info-phone">Доставка “Нова пошта”</span>
               <span>безкоштовно</span>
+              </div>
             </div>
 
             <div className="deliver-info">
-              <div>
+              <div className="deliver-info-logo">
                 <img src={meets} alt="meets" />
-                <span>Доставка курьером “Укрпошта”</span>
+                <span className="deliver-info-pc">Доставка курьером “Укрпошта”</span>
               </div>
+              <div className="deliver-info-del">
+              <span className="deliver-info-phone">Доставка “Нова пошта”</span>
               <span>29₴</span>
+              </div>
             </div>
           </div>
 
@@ -146,6 +174,8 @@ const Selectedsub = ({executeScroll, descriptionRef, charasteristicRef}) => {
         </div>
       </div>
 
+
+      
     </div>
   );
 };

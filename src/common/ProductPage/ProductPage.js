@@ -22,6 +22,7 @@ const ProductPage = () => {
                 
             <Charasteristics />
             </div>
+
         </div>
     )
 }

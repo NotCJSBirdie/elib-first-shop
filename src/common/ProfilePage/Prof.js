@@ -1,11 +1,13 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import "./ProfileEdit.css";
+
 import ava from "../../images/avatar.png";
 import arrowRightImg from "../../images/arrow-right.png";
-import arrowDownImg from '../../images/arrow-d.png'
+import arrowDownImg from "../../images/arrow-d.png";
 import { city } from "../../features/city";
 import { regions } from "../../features/regions";
 
-const Prof = ({editL, editP}) => {
+const Prof = ({ editL, editP }) => {
   const [viewRegion, setViewRegion] = useState(false);
   const [viewCity, setViewCity] = useState(false);
 
@@ -16,13 +18,13 @@ const Prof = ({editL, editP}) => {
   const [cityName, setCityName] = useState("Город");
 
   function hideCityList() {
-    setViewCity(false)
-    setArrowCity(arrowRightImg)
+    setViewCity(false);
+    setArrowCity(arrowRightImg);
   }
 
   function viewCityList() {
-    setViewCity(true)
-    setArrowCity(arrowDownImg)
+    setViewCity(true);
+    setArrowCity(arrowDownImg);
   }
 
   return (
@@ -31,7 +33,7 @@ const Prof = ({editL, editP}) => {
 
       <div className="personalInfo">
         <h2>Персональные данные</h2>
-        <div className="personalInfo-info">
+        <div className="personalInfo-info pc">
           <img src={ava} />
 
           <div className="personalInfo-con">
@@ -43,6 +45,20 @@ const Prof = ({editL, editP}) => {
             <input type="text" placeholder="Email" />
           </div>
         </div>
+
+        {/* PHONE */}
+        <div className="personalInfo-infoPhone">
+          <img src={ava} />
+
+          <div className="personalInfo-conPhone">
+            <input type="text" placeholder="Имя" />
+            <input type="text" placeholder="Фамилия" />
+
+            <input type="text" placeholder="Номер телефона" />
+            <input type="text" placeholder="Email" />
+          </div>
+        </div>
+        {/* --- */}
 
         <div className="deliverInfo">
           <h2>Информация о доставке</h2>
@@ -110,7 +126,7 @@ const Prof = ({editL, editP}) => {
 
       <div className="profileLogin">
         <h2>Логин и пароль</h2>
-        <div className="profileLogin-login-password">
+        <div className="profileLogin-login-password pc">
           <div className="profileLogin-in">
             <div>
               <input value="Логин" readOnly />
@@ -125,12 +141,23 @@ const Prof = ({editL, editP}) => {
             <span onClick={() => editP()}>Изменить пароль</span>
           </div>
         </div>
+
+        <div className="profileLogin-login-password phone">
+          <div className="profileLogin-in">
+            <span className="log">Логин</span>
+            <span onClick={() => editL()}>Изменить логин</span>
+          </div>
+
+          <div className="profileLogin-in">
+            <span className="log">Пароль</span>
+            <span onClick={() => editP()}>Изменить пароль</span>
+          </div>
+        </div>
       </div>
 
-        <div className="delete-acc">
-
-     <button>Удалить аккаунт</button>
-        </div>
+      <div className="delete-acc">
+        <button>Удалить аккаунт</button>
+      </div>
     </div>
   );
 };

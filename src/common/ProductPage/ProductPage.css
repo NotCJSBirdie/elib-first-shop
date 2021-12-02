@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: row;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .SelectedItem-tab > ul > li {
@@ -126,7 +127,7 @@
     color: #000000;
 }
 
-.SelectedItem-price > button {
+.SelectedItem-price > div > button {
     background: #004194;
     border-radius: 4px;
     
@@ -141,7 +142,7 @@
     margin-right: 10px;
 }
 
-.SelectedItem-price > img {
+.SelectedItem-price > div > img {
     margin: 0px 10px;
     cursor: pointer;
 }
@@ -170,12 +171,12 @@
     margin-bottom: 20px;
 }
 
-.deliver-info > div {
+.deliver-info-logo {
     display: flex;
     align-items: center;
 }
 
-.deliver-info > div > span, .deliver-info > span {
+.deliver-info-logo > span, .deliver-info > div > span {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     line-height: 120%;
@@ -210,7 +211,7 @@
 
 
 .selectedItemAbout {
-    margin: 50px 0px;
+    margin: 50px 15px;
     text-align: left;
 }
 
@@ -273,9 +274,167 @@
     color: #000000;
 }
 
+.deliver-info-phone {
+    display: none;
+}
+
 @media (max-width: 1100px) {
-    .SelectedItem-price > button {
+    .SelectedItem-price > div > button {
         font-size: 16px;
         margin-right: 7px;
+    }
+}
+
+@media(max-width: 994px) {
+    .SelectedItem-images {
+        display: none;
+    }
+    .SelectedItem-preview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SelectedItem-slider {
+        width: 400px;
+        position: relative;
+    }
+
+    .SelectedItem-buyInfo {
+        width: 100%;
+    }
+
+   
+}
+
+@media(max-width: 554px) {
+    .SelectedItem-tab > ul {
+        justify-content: space-between;
+        margin: 10px;
+    }
+    .SelectedItem-tab > ul > li {
+        font-size: 10px;
+        margin: 0px;
+    }
+
+    .selectedItem-title > h2 {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .SelectedItem-smallInfo > p {
+        font-size: 12px;
+    }
+
+    .price > span {
+        font-size: 20px;
+    }
+
+    .SelectedItem-price > div > button {
+        font-size: 12px;
+    }
+
+    .SelectedItem-price > div > .btn-phone {
+        background: #011535;
+    }
+
+    .SelectedItem-price > div > img {
+        width: 15px;
+        margin: 0px 5px;
+    }
+
+    .SelectedItem-price {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 4px 0px;
+    }
+
+    .SelectedItem-deliver > h2 {
+        font-size: 14px;
+        margin: 0px;
+        padding: 10px 4px;
+    }
+
+    .deliver-info {
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .deliver-info-logo > span, .deliver-info > div > span {
+        font-size: 12px;
+    }
+
+    .deliver-info-logo > span {
+        display: none;
+    }
+
+    .deliver-info-phone {
+        display: block;
+    }
+
+    .deliver-info-pc {
+        display: none;
+    }
+
+    .deliver-info-del {
+        text-align: left;
+        line-height: 11px;
+    }
+
+    .SelectedItem-pay > h4 {
+        font-size: 14px;
+    }
+
+    .SelectedItem-pay > span {
+        font-size: 12px;
+    }
+
+    .selectedItemAbout-title {
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    .selectedItemAbout-description {
+        margin-bottom: 20px;
+    }
+
+    .selectedItemAbout-desc {
+        font-size: 12px;
+    }
+
+    .selectedItemAbout-title {
+        font-size: 14px;
+        text-align: left;
+        margin: 0px
+    }
+
+    .characteristic > div > span {
+        font-size: 12px;
+    }
+    
+    .characteristic > span {
+        font-size: 10px;
+    }
+
+    .characteristics {
+        margin: 0px 15px;
+    }
+
+    .characteristic {
+        padding: 20px 0px;
+        text-align: left;
+    }
+
+    .characteristic > div {
+        line-height: 10px;
+    }
+
+}
+
+@media(max-width: 400px) {
+    .SelectedItem-slider {
+        width: 100%;
     }
 }

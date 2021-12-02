@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Basket.css'
 
 
 const BasketItem = ({image, title, price, PriceAll}) => {
@@ -25,9 +26,9 @@ const BasketItem = ({image, title, price, PriceAll}) => {
     let result = num * priceI
 
 
-
     return (
         <div className="basketItem">
+            <div className="basket-pc">
             <div className='img-title'>
             <img src={image} />
             <h4>{title}</h4>
@@ -40,6 +41,32 @@ const BasketItem = ({image, title, price, PriceAll}) => {
             </div>
 
             <span>{`${result}₴`}</span>
+
+            </div>
+
+            <div className="basket-phone">
+            <div className='img-title'>
+            <img src={image} />
+            </div>
+            
+            <div className="basketitem-info">
+
+            <h4>{title}</h4>
+
+            <div className="current-price">
+
+            <div className="button-numb">
+                <button onClick={decrement}>-</button>
+                <span>{num}</span>
+                <button onClick={increment}>+</button>
+            </div>
+            <span>{`${result}₴`}</span>
+
+            </div>
+
+            </div>
+
+            </div>
         </div>
     )
 }

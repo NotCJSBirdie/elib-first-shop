@@ -85,3 +85,48 @@
     width: 30px;
     cursor: pointer;
 }
+
+@media(max-width: 554px) {
+
+    .EditPL {
+        width: 330px;
+        margin: 30px auto;
+        max-height: 360px;
+    }
+    .EditPL-inputs {
+        max-width: 300px;
+    }
+
+    .EditPL > h2 {
+        font-size: 18px;
+        padding-top: 36px;
+    }
+    .EditPL > img {
+        width: 18px;
+    }
+
+    .EditPL-inputs {
+        margin-top: 50px;
+    }
+
+    .EditPL-inputs > div {
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    .EditPL-inputs > div > input {
+        font-size: 10px;
+    }
+
+    .EditPL-inputs > div > img {
+        width: 15px;
+    }
+
+    .EditPL-inputs > span{ 
+        font-size: 10px;
+    }
+
+    .EditPL > button {
+        font-size: 10px;
+    }
+}

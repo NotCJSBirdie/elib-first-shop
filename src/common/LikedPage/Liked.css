@@ -34,10 +34,6 @@
     background: #EEEEEE;
 }
 
-.likedPage-category > div > img {
-    margin-top: 8px;
-}
-
 .likedPage-search {
     margin: 0px 20px;
 }
@@ -154,9 +150,129 @@
     cursor: pointer;
 }
 
+.likedPage-item-rate.phone {
+    display: none;
+}
+
+.likedPage-item-buy.phone {
+    display: none;
+}
+
 
 @media (max-width: 1020px) {
     .likedPage-item-rate {
         margin: 0px 25px;
+    }
+}
+
+@media (max-width: 994px) {
+    .likedPage-item {
+        flex-direction: column;
+    }
+
+    .likedPage-item-desc {
+        width: 90%;
+    }
+
+    .likedPage-item-rate {
+        display: none;
+    }
+    .likedPage-item-rate.phone {
+        display: block;
+        margin: 0px;
+        justify-content: flex-start;
+    }
+
+    .likedPage-item-buy {
+        display: none;
+    }
+
+    .likedPage-item-buy.phone {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+    }
+
+}
+
+@media(max-width: 554px) {
+    .likedPage > h2 {
+        font-size: 20px;
+    }
+
+    .likedPage-item-con > img {
+        width: 30%;
+    }
+    .likedPage-category-search {
+        margin: 30px 0px;
+    }
+    .likedPage-category-search.phone {
+        border-bottom: 1px solid rgba(4, 26, 62, 0.5);;
+        padding-bottom: 20px;
+    }
+    .likedPage-category-search {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .likedPage-category {
+        width: 100%;
+    }
+
+    .likedPage-category > div > span {
+        font-size: 18px;
+    }
+
+    .likedPage-category > div > img {
+        margin: 0px;
+    }
+
+    .likedPage-search {
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .likedPage-item-desc > h4 {
+        font-size: 14px;
+    }
+
+    .likedPage-item-buy > button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .likedPage-item-buy > img {
+        width: 15px;
+    }
+
+    .likedPage-item-rate > div > img {
+        width: 15px;
+        padding-left: 0px;
+    }
+
+    .likedPage-item {
+        padding: 0px 5px;
+    }
+
+    .likedPage-item-desc > span {
+        padding: 0px;
+        font-size: 12px;
+    }
+    .likedPage-item-rate.phone > div{
+        line-height: 10px;
+        margin: 4px 0px;
+    }
+
+    .likedPage-search > input {
+        font-size: 15px;
+    }
+
+    .likedPage-item-rate.phone {
+        line-height: 10px;
+    }
+
+    .likedPage-item-rate > span {
+        font-size: 8px;
+        color: #004194
     }
 }
